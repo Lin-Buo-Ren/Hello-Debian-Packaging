@@ -97,6 +97,14 @@ process_commandline_parameters() {
 				|"-d")
 					enable_debug="Y"
 					;;
+				--clean-build-artifacts\
+				|-c)
+					rm\
+						--force\
+						--verbose\
+						"${RUNTIME_EXECUTABLE_DIRECTORY}/hello-debian-packaging"
+					exit 0
+					;;
 				*)
 					printf "ERROR: Unknown command-line argument \"%s\"\n" "${parameters[0]}" >&2
 					return 1
