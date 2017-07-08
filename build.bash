@@ -39,9 +39,13 @@ init(){
 	fi
 
 	gcc\
+		-v\
 		-o "${RUNTIME_EXECUTABLE_DIRECTORY}/hello-debian-packaging"\
 		"${RUNTIME_EXECUTABLE_DIRECTORY}/hello-debian-packaging.c"
 
+	printf --\
+		"\n%s\n"\
+		"Software build successfully."
 	exit 0
 }; declare -fr init
 
