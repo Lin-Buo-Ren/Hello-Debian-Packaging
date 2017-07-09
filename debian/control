@@ -1,0 +1,15 @@
+Source: hello-debian-packaging
+Section: misc
+Priority: extra
+Maintainer: 林博仁 <Buo.Ren.Lin@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/Lin-Buo-Ren/Hello-Debian-Packaging
+
+Package: hello-debian-packaging
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: This is an example program for practicing Debian software packaging
+ .
+ This package provided `hello-debian-packaging` command that simply prints "Hello Debian packaging!" to the standard output device then exits
