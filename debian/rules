@@ -11,4 +11,4 @@ override_dh_auto_build:
 	./build.bash
 
 override_dh_auto_install:
-	./install.bash --install-prefix debian/hello-debian-packaging
+	./install.bash --install-prefix debian/hello-debian-packaging/usr
