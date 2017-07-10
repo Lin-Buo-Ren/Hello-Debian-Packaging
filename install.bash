@@ -43,7 +43,7 @@ init(){
 
 	install\
 		--directory\
-		"${install_prefix}"
+		"${install_prefix}/bin"
 
 	install\
 		--owner root\
