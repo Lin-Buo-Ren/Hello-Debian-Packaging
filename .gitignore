@@ -1,2 +1,6 @@
 /nohup.out
 /hello-debian-packaging
+/debian/hello-debian-packaging/DEBIAN/
+/debian/hello-debian-packaging.debhelper.log
+/debian/hello-debian-packaging.substvars
+/debian/hello-debian-packaging/
