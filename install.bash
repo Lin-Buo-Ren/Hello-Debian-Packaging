@@ -112,6 +112,12 @@ process_commandline_parameters() {
 					unset 'parameters[0]'
 					if [ "${#parameters[@]}" -ne 0 ]; then
 						install_prefix="${parameters[0]}"
+					else
+						printf --\
+							"%s: Error: --install-prefix option requires 1 argument.\n"\
+							"${RUNTIME_EXECUTABLE_NAME}"\
+							1>&2
+						return 1
 					fi
 					;;
 				*)
