@@ -110,6 +110,7 @@ process_commandline_parameters() {
 				--install-prefix\
 				|-p)
 					unset 'parameters[0]'
+					parameters=("${parameters[@]}")
 					if [ "${#parameters[@]}" -ne 0 ]; then
 						install_prefix="${parameters[0]}"
 					else
