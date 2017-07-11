@@ -7,6 +7,9 @@ export DH_VERBOSE = 1
 %:
 	dh $@
 
+override_dh_auto_clean:
+	./build.bash --clean-build-artifacts
+
 override_dh_auto_build:
 	./build.bash
 
