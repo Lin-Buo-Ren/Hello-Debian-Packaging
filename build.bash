@@ -25,6 +25,24 @@ if [ -v "BASH_SOURCE[0]" ]; then
 fi
 declare -ar RUNTIME_COMMANDLINE_PARAMETERS=("${@}")
 
+## Build Environment Configuration
+declare CC="gcc"
+declare C_BUILDER="${CC}"
+if ! test -v CFLAGS; then
+	printf --\
+			"%s: %s\n"\
+			"${RUNTIME_EXECUTABLE_NAME}"\
+			"INFO: CFLAGS not set, fallback to default value." 1>&2
+	declare CFLAGS=""
+fi
+if ! test -v LDFLAGS; then
+	printf --\
+			"%s: %s\n"\
+			"${RUNTIME_EXECUTABLE_NAME}"\
+			"INFO: LDFLAGS not set, fallback to default value." 1>&2
+	declare LDFLAGS=""
+fi
+
 ## init function: entrypoint of main program
 ## This function is called near the end of the file,
 ## with the script's command-line parameters as arguments
@@ -38,13 +56,14 @@ init(){
 		exit 1
 	fi
 
-	gcc\
-		-v\
+	${C_BUILDER}\
+		${CFLAGS}\
+		${LDFLAGS}\
 		-o "${RUNTIME_EXECUTABLE_DIRECTORY}/hello-debian-packaging"\
 		"${RUNTIME_EXECUTABLE_DIRECTORY}/hello-debian-packaging.c"
 
 	printf --\
-		"\n%s\n"\
+		"%s\n"\
 		"Software build successfully."
 	exit 0
 }; declare -fr init
