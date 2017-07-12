@@ -11,5 +11,12 @@ Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: This is an example program for practicing Debian software packaging
+ This package provided `hello-debian-packaging` command that simply prints "Hel-
+ lo Debian packaging!" to the standard output device then exits.
  .
- This package provided `hello-debian-packaging` command that simply prints "Hello Debian packaging!" to the standard output device then exits
+ This is an example package to serve as an example how to build a policy-comply-
+ ing Debian package, the best way to use this package is to download its source
+ package via `apt source hello-debian-packaging` and refer it's source code and
+ try modifying.
+ .
+ This package might be little use to be actually installed in system.
