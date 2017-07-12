@@ -4,3 +4,5 @@
 /debian/hello-debian-packaging.debhelper.log
 /debian/hello-debian-packaging.substvars
 /debian/hello-debian-packaging/
+/debian/debhelper-build-stamp
+/debian/files
