@@ -1,8 +1,15 @@
 #!/usr/bin/make -f
+## Print executed debhelper commands
 export DH_VERBOSE = 1
-#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
-#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+## Customize Building
+## Hardening - Debian Wiki
+## https://wiki.debian.org/Hardening
+## HardeningWalkthrough - Debian Wiki
+## https://wiki.debian.org/HardeningWalkthrough
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
 	dh $@
