@@ -1,5 +1,8 @@
 hello-debian-packaging (1.1.0-1) unstable; urgency=low
 
-  * Proper changelog generation not implemented, please refer Git commit history for changelog.
+  * ITP: hello-debian-packaging -- An example project for leaning Debian packa-
+    ging.  (Closes: #123456)
+  * Proper changelog generation not implemented, please refer Git commit histo-
+    ry for changelog.
 
  -- 林博仁 <Buo.Ren.Lin@gmail.com>  Sun, 09 Jul 2017 18:06:08 +0800
