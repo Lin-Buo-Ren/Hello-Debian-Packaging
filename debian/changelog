@@ -1,4 +1,4 @@
-hello-debian-packaging (1.1.0-1) unstable; urgency=low
+hello-debian-packaging (1.3.1-1) unstable; urgency=low
 
   * ITP: hello-debian-packaging -- An example project for leaning Debian packa-
     ging.  (Closes: #123456)
