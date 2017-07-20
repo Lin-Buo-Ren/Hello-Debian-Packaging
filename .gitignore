@@ -6,4 +6,4 @@
 /debian/hello-debian-packaging/
 /debian/debhelper-build-stamp
 /debian/files
-/debian/.debhelper/generated/
+/debian/.debhelper/
