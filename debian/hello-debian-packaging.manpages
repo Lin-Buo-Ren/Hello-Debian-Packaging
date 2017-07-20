@@ -1,1 +1,2 @@
-Manual Pages/hello-debian-packaging.1
+# Currently dh_installman doesn't support path with space characters(Debian Bug #868998, Ubuntu Bug #)
+#"Manual Pages/hello-debian-packaging.1"
