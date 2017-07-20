@@ -62,6 +62,16 @@ init(){
 		"${RUNTIME_EXECUTABLE_DIRECTORY}/Manual Pages/hello-debian-packaging.1"\
 		"${install_prefix}/share/man/man1"
 
+	install\
+		--directory\
+		"${install_prefix}/share/man/zh_TW/man1"
+	install\
+			--owner root\
+			--group root\
+			--mode 644\
+			"${RUNTIME_EXECUTABLE_DIRECTORY}/Manual Pages/hello-debian-packaging.zh_TW.1"\
+			"${install_prefix}/share/man/zh_TW/man1/hello-debian-packaging.1"
+
 	exit 0
 }; declare -fr init
 
