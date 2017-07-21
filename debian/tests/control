@@ -1,0 +1,10 @@
+# Autopkgtest control file
+# Refer /usr/share/doc/autopkgtest/README.package-tests.html
+#Tests: 
+Test-Command: ./test.bash
+## file:///usr/share/doc/autopkgtest/README.package-tests.html#defined-restrictions
+Restrictions: build-needed
+#Features: 
+#Depends: 
+#Tests-Directory: 
+#Classes: 

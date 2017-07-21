@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+## Print executed debhelper commands
+export DH_VERBOSE = 1
+
+## Customize Building
+## Hardening - Debian Wiki
+## https://wiki.debian.org/Hardening
+## HardeningWalkthrough - Debian Wiki
+## https://wiki.debian.org/HardeningWalkthrough
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+## Manually export *FLAGS to environment due to overridden override_dh_auto_build
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	./build.bash --clean-build-artifacts
+
+override_dh_auto_build:
+	./build.bash
+
+override_dh_auto_install:
+	./install.bash --install-prefix debian/hello-debian-packaging/usr
