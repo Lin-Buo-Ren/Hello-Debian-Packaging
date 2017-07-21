@@ -1,5 +1,5 @@
 # Hello Debian Packaging
-This is an example program for practicing Debian software packaging
+A minimalistic software project for learning Debian packaging
 
 <https://github.com/Lin-Buo-Ren/Hello-Debian-Packaging>
 
