@@ -5,6 +5,7 @@ Maintainer: 林博仁 <Buo.Ren.Lin@gmail.com>
 Build-Depends: debhelper (>=9)
 Standards-Version: 3.9.6
 Homepage: https://github.com/Lin-Buo-Ren/Hello-Debian-Packaging
+Testsuite: autopkgtest
 
 Package: hello-debian-packaging
 Architecture: any
