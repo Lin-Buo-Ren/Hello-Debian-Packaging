@@ -1,3 +1,9 @@
+hello-debian-packaging (1.4.2-1) UNRELEASED; urgency=medium
+
+  * Mention test code in debian/copyright
+
+ -- 林博仁 <Buo.Ren.Lin@gmail.com>  Fri, 21 Jul 2017 23:30:31 +0800
+
 hello-debian-packaging (1.4.1-1) unstable; urgency=low
 
   * ITP: hello-debian-packaging -- An example project for leaning Debian packa-

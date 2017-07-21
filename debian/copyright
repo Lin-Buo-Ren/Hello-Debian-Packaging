@@ -6,6 +6,7 @@ Files:     README.markdown
            build.bash
            hello-debian-packaging.c
            install.bash
+           test.bash
            Manual*Pages/*
            debian/*
 Copyright: Copyright 2017 林博仁
