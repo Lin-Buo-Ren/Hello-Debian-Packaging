@@ -15,4 +15,4 @@
 ### Compulsory line, this is a version 3 file
 version=3
 
-https://github.com/Lin-Buo-Ren/hello-debian-packaging/tags .*/(\d[\d\.]*)\.(?:tar.gz|tar.bz2|tar.xz)
+https://github.com/Lin-Buo-Ren/hello-debian-packaging/tags .*/v(\d[\d\.]*)\.(?:tar.gz|tar.bz2|tar.xz)
